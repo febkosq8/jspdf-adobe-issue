@@ -7,6 +7,10 @@ npm i
 npm start
 ```
 
-The output [`proof.pdf`](https://github.com/febkosq8/jspdf-adobe-issue/blob/main/proof.pdf) if opened in Adobe Acrobat wont open the 4th page correctly.
 
-If you open the same file in Chrome, it works without any issues.
+If you open the file in Chrome, it works without any issues.
+
+However, 
+ - The output [`proof.pdf`](https://github.com/febkosq8/jspdf-adobe-issue/blob/main/proof.pdf) if opened in Adobe Acrobat wont open the 4th page correctly.
+ - The Table of Context which uses the page number link is broken in Adobe Acrobat
+
