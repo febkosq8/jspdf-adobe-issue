@@ -1,6 +1,5 @@
 import fs from "fs";
 import { jsPDF } from "jspdf";
-import "jspdf-autotable";
 const generatedData = {
   metadata: {
     creator: "testuser@gmail.com",
@@ -112,16 +111,6 @@ function NewDefectPDF(generatedData) {
           pageSize.height - yMargin + fontSize,
         );
       }
-    };
-    const addTable = (xAxis, yAxis, content) => {
-      doc.autoTable({
-        theme: content.theme,
-        margin: xAxis,
-        startY: yAxis,
-        head: content?.head ?? null,
-        body: content.data,
-        styles: { font: "OpenSans" },
-      });
     };
     const logPageForTOC = (text) => {
       tocTable.push({
@@ -265,9 +254,6 @@ function NewDefectPDF(generatedData) {
           contentTextLines.length * doc.internal.getLineHeight();
         doc.text(contentTextLines, baseXAxis, paraYAxis, { align: "justify" });
         paraYAxis += contentTextHeight + 20;
-      } else if (para.type === "table") {
-        addTable(baseXAxis, paraYAxis, para.table);
-        paraYAxis = doc.lastAutoTable.finalY + 30;
       }
       if (para.includeInTOC) {
         logPageForTOC(para.name);
