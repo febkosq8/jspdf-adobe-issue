@@ -1,4 +1,5 @@
 # Demo to show issue with jspdf and Adobe Acrobat
+Related to  [#3428](https://github.com/parallax/jsPDF/issues/3428) / [#3740](https://github.com/parallax/jsPDF/issues/3740)
 
 Setup and execute
 
