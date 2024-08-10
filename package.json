@@ -1,17 +1,17 @@
 {
-  "name": "jspdf-adobe-issue",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "main": "App.js",
-  "scripts": {
-    "start": "node App.js",
-    "prettier": "prettier --write ."
-  },
-  "author": "Febkosq8",
-  "license": "ISC",
-  "dependencies": {
-    "prettier": "3.2.5",
-    "jspdf": "2.5.1"
-  }
+	"name": "jspdf-adobe-issue",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"main": "App.js",
+	"scripts": {
+		"start": "node App.js",
+		"prettier": "prettier --write ."
+	},
+	"author": "Febkosq8",
+	"license": "ISC",
+	"dependencies": {
+		"jspdf": "2.5.1",
+		"prettier": "3.3.3"
+	}
 }
